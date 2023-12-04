@@ -1,21 +1,52 @@
-# TripleTen Project
-Projects of Data Science training course in TripleTen.
-Involve Basic Python, SQL, Data Analysis, Data Visualization, Feature Engineering, Machine Learning, Deep Learning, etc.
+# Goal
+Identifying the top taxi companies, neighborhoods with the most drop-offs, and conducting hypothesis testing
 
-| Project               | Description                                                                                 | Libraries                      |
-|:--------------------- |:------------------------------------------------------------------------------------------- |:------------------------------ |
-|[Credit Score Analysis]()|Utilizing different metrics to determine the likelihood that a customer defaults on a loan|*pandas, ntlk*|
-|[Vehicle Price Analysis]()|Studying vehicle ads to determine what factors influence vehicle price|*pandas, matplotlib, numpy*|
-|[Phone Plan Analysis]()|Selecting the plan with the highest potential revenue for different target markets and conducting hypothesis testing|*pandas, matplotlib, scipy, numpy, nltk*|
-|[Video Game Analysis]()|Identifying patterns that determine a game's success, creating a user profile for each target market, and conducting hypothesis testing|*pandas, matplotlib, scipy, numpy, nltk*|
-|[Taxi Company Analysis]()|Identifying the top taxi companies, neighborhoods with the most drop-offs, and conducting hypothesis testing|*pandas, matplotlib, scipy, numpy, nltk*|
-|[Telecom Plans ML Model]()|Studying customer behavior and building a machine learning model that recommends phones plans|*pandas, sklearn*|
-|[Bank Customers Model]()|Creating a classification model to predict customer churn from an imbalanced dataset|*pandas, sklearn*|
-|[Oil Well Model]()|Analyzing data from several petroleum reservoir regions and oil wells to calculate the profitability and risk of loss of developing a new well in each region|*pandas, numpy, matplotlib, seaborn*|
-|[Gold Extraction Model]()|Building a machine learning model that predicts the amount of gold recovered from the extraction process so as to optimize production|*pandas, matplotlib, numpy, sklearn*|
-|[Insurance Company Data Masking]()|Developing a data transforming algorithm for data masking, ensuring that it does not impact the quality of a machine learning model|*pandas, numpy, sklearn*|
-|[Car Price Model]()|Building a model using historical car data for an app feature that can determine the market value of a user's car|*pandas, numpy, sklearn, time, catboost, lightgbm*|
-|[Taxi Orders Model]()|Using historical data on taxi orders at airports to create a model that predicts the amount of taxi orders for any given time frame|*pandas, numpy, matplotlib, sklearn, catboost, lightgbm, statsmodels*|
-|[Movie Sentiment Analysis]()|Training a model that classifies positive and negative reviews|*pandas, numpy, math, re, nltk, matplotlib, seaborn, tqdm*|
-|[Supermarket Chain Model]()|Training and evaluating a model to automatically detect the age of a customer at a checkout counter|*pandas, numpy, matplotlib, seaborn, tensorflow*|
-|[Telecom Client Churn Model]()|Training a model to forecast if a client is going to leave|*pandas, numpy, sklearn, catboost, lightgbm*|
+# Data Description
+Neighborhood table: data regarding areas in the city of Chicago
+- `name`: region name
+- `neighborhood_id`: area code
+- `Cabs` table: taxi related data
+- `cab_id`: vehicle code
+- `vehicle_id`: vehicle technical ID
+- `company_name`: name of the company that owns the vehicle
+
+Trips table: travel related data
+- `trip_id`: trip code
+- `cab_id`: operating vehicle code
+- `start_ts`: date and time the trip started (time rounded in hours)
+- `end_ts`: date and time the trip ends (time rounded in hours)
+- `duration_seconds`: trip duration in seconds
+- `distance_miles`: trip distance in miles
+- `pickup_location_id`: pickup area code
+- `dropoff_location_id`: delivery area code
+
+weather_records table: weather related data
+- `record_id`: weather recording code
+- `ts`: date and time when weather recording was carried out (time rounded in hours)
+- `temperature`: the temperature when weather recording was carried out
+- `description`: a short description of the weather conditions, such as "light rain" or "scattered clouds".
+
+From the file above, the following file results are obtained:
+
+(project_sql_result_01.csv.) This file contains the following data:
+- `company_name`: taxi company name
+- `trips_amount`: number of trips for each taxi company on 15-16 November 2017.
+
+(project_sql_result_04.csv.) This file contains the following data:
+- `dropoff_location_name`: name of the area in Chicago where the trip ends
+- `average_trips`: average number of trips ending in each region in November 2017.
+
+(project_sql_result_07.csv) — result of the last query.
+This file contains travel data from the Loop to O'Hare International Airport. This file contains the following data:
+- `start_ts` : pick-up date and time
+- `weather_conditions` : weather conditions when the trip starts
+- `duration_seconds` : trip duration in seconds
+
+# Libraries
+pandas, matplotlib, scipy, numpy, nltk
+
+# Content
+- Introduction
+- Data Overview
+- Explorative Data Analysis
+- Hypothesis Testing
