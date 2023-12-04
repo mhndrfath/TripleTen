@@ -1,21 +1,51 @@
-# TripleTen Project
-Projects of Data Science training course in TripleTen.
-Involve Basic Python, SQL, Data Analysis, Data Visualization, Feature Engineering, Machine Learning, Deep Learning, etc.
+# Goal
+Selecting the plan with the highest potential revenue for different target markets and conducting hypothesis testing
 
-| Project               | Description                                                                                 | Libraries                      |
-|:--------------------- |:------------------------------------------------------------------------------------------- |:------------------------------ |
-|[Credit Score Analysis]()|Utilizing different metrics to determine the likelihood that a customer defaults on a loan|*pandas, ntlk*|
-|[Vehicle Price Analysis]()|Studying vehicle ads to determine what factors influence vehicle price|*pandas, matplotlib, numpy*|
-|[Phone Plan Analysis]()|Selecting the plan with the highest potential revenue for different target markets and conducting hypothesis testing|*pandas, matplotlib, scipy, numpy, nltk*|
-|[Video Game Analysis]()|Identifying patterns that determine a game's success, creating a user profile for each target market, and conducting hypothesis testing|*pandas, matplotlib, scipy, numpy, nltk*|
-|[Taxi Company Analysis]()|Identifying the top taxi companies, neighborhoods with the most drop-offs, and conducting hypothesis testing|*pandas, matplotlib, scipy, numpy, nltk*|
-|[Telecom Plans ML Model]()|Studying customer behavior and building a machine learning model that recommends phones plans|*pandas, sklearn*|
-|[Bank Customers Model]()|Creating a classification model to predict customer churn from an imbalanced dataset|*pandas, sklearn*|
-|[Oil Well Model]()|Analyzing data from several petroleum reservoir regions and oil wells to calculate the profitability and risk of loss of developing a new well in each region|*pandas, numpy, matplotlib, seaborn*|
-|[Gold Extraction Model]()|Building a machine learning model that predicts the amount of gold recovered from the extraction process so as to optimize production|*pandas, matplotlib, numpy, sklearn*|
-|[Insurance Company Data Masking]()|Developing a data transforming algorithm for data masking, ensuring that it does not impact the quality of a machine learning model|*pandas, numpy, sklearn*|
-|[Car Price Model]()|Building a model using historical car data for an app feature that can determine the market value of a user's car|*pandas, numpy, sklearn, time, catboost, lightgbm*|
-|[Taxi Orders Model]()|Using historical data on taxi orders at airports to create a model that predicts the amount of taxi orders for any given time frame|*pandas, numpy, matplotlib, sklearn, catboost, lightgbm, statsmodels*|
-|[Movie Sentiment Analysis]()|Training a model that classifies positive and negative reviews|*pandas, numpy, math, re, nltk, matplotlib, seaborn, tqdm*|
-|[Supermarket Chain Model]()|Training and evaluating a model to automatically detect the age of a customer at a checkout counter|*pandas, numpy, matplotlib, seaborn, tensorflow*|
-|[Telecom Client Churn Model]()|Training a model to forecast if a client is going to leave|*pandas, numpy, sklearn, catboost, lightgbm*|
+# Data Description
+Users table (user data):
+- `user_id` — User ID
+- `first_name` — user's first name
+- `last_name` — user's last name
+- `age` — user's age (years)
+- `reg_date` — subscription start date (dd, mm, yy)
+- `churn_date` — the date the user stopped using the service (if the value is missing or does not exist, it means the service plan was in use when this data was generated)
+- `city` — the city where the user lives
+- `plan` — phone plan name
+
+Calls table (call data):
+- `id` — Unique web session ID
+- `call_date` — call date
+- `duration` — call duration (in minutes)
+- `user_id` — ID of the user making the call
+
+Messages table (SMS data):
+- `id` — Unique SMS ID
+- `message_date` — date the SMS was sent
+- `user_id` — ID of the user who sent the SMS
+
+Internet tables (web session data):
+- `id` — Unique web session ID
+- `mb_used` — volume of data consumed during the session (in megabytes)
+- `session_date` — web session date
+- `user_id` — User ID
+
+Plans table (phone package data):
+- `plan_name` — phone plan name
+- `usd_monthly_fee` — monthly fee in US dollars
+- `minutes_included` — monthly calling minutes allocation
+- `messages_included` — monthly SMS allocation
+- `mb_per_month_included` — monthly data volume allocation (in megabytes)
+- `usd_per_minute` — price per minute if the package allocation limit has been exceeded (for example, if the package has an allocation of 100 minutes, then usage starting from the 101st minute will be charged)
+- `usd_per_message` — price per SMS if the package allocation limit has been exceeded
+- `usd_per_gb` — price per extra gigabyte of data if the package allocation limit is exceeded (1 GB = 1024 megabytes)
+
+# Libraries
+*pandas, matplotlib, scipy, numpy, nltk*
+
+# Content
+- Introduction
+- Data Overview
+- Data Pre-Processing
+- Statistical Data Analysis
+- Hypothesis Testing
+- General Conclusion
