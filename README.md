@@ -4,7 +4,7 @@ Involve Basic Python, SQL, Data Analysis, Data Visualization, Feature Engineerin
 
 | No | Project               | Description                                                                       | Libraries                      |
 |:-- |:--------------------- |:--------------------------------------------------------------------------------- |:------------------------------ |
-|1|[Credit Score Analysis]()|Utilizing different metrics to determine the likelihood that a customer defaults on a loan|*pandas, ntlk*|
+|1|[Credit Score Analysis](https://github.com/mhndrfath/TripleTen/tree/Project-1)|Utilizing different metrics to determine the likelihood that a customer defaults on a loan|*pandas, ntlk*|
 |2|[Vehicle Price Analysis]()|Studying vehicle ads to determine what factors influence vehicle price|*pandas, matplotlib, numpy*|
 |3|[Phone Plan Analysis]()|Selecting the plan with the highest potential revenue for different target markets and conducting hypothesis testing|*pandas, matplotlib, scipy, numpy, nltk*|
 |4|[Video Game Analysis]()|Identifying patterns that determine a game's success, creating a user profile for each target market, and conducting hypothesis testing|*pandas, matplotlib, scipy, numpy, nltk*|
