@@ -1,6 +1,6 @@
 # Video Game Analysis
 
-## project Description
+## Project Description
 At the online store "Ice," where video games from around the world are sold, an analyst is tasked with identifying patterns to determine the success of a game using data from 2016. This data includes user and expert game reviews, genre, platform (e.g., Xbox or PlayStation), and historical game sales information sourced from open databases.
 
 The objective is to pinpoint factors that contribute to a game's success or lack thereof. By analyzing this data, the analyst aims to identify games with the highest potential and strategize advertising campaigns for 2017.
