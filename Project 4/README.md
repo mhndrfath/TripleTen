@@ -61,6 +61,15 @@ Plans table (phone package data):
 - Testing Hypothesis
 
 ## Result
+Hypothesis :
+1. The average income of Ultimate and Surf phone plan users is different.
+- Ho = Average income of Ultimate and Surf phone package users is the same
+- H1 = Average income of Ultimate and Surf phone package users is not the same
+
+2. The average income of users in the NY-NJ area is different from the income of users from the region
+- Ho = The average income of users in the NY-NJ area is the same as the income of users from other areas
+- H1 = The average income of users in the NY-NJ area is not the same as the income of users from other areas
+
 After analyzing data on cellular data usage among consumers with different package types, it can be concluded that:
     
 - The package that gets more revenue is the surf package, seen from the usage of consumers who choose this package more and there are also many consumers whose usage exceeds the package limit obtained
